@@ -6,10 +6,10 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -19,10 +19,10 @@ GEM
     execjs (2.8.1)
     extras (0.3.0)
       forwardable-extended (~> 2.5)
-    fastimage (2.2.3)
-    ffi (1.15.0)
+    fastimage (2.2.4)
+    ffi (1.15.3)
     forwardable-extended (2.6.0)
-    html-proofer (3.19.1)
+    html-proofer (3.19.2)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogumbo (~> 2.0)
@@ -86,9 +86,9 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
-    mini_portile2 (2.5.1)
+    mini_portile2 (2.5.3)
     minitest (5.14.4)
-    nokogiri (1.11.4)
+    nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     nokogumbo (2.0.5)
@@ -125,14 +125,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  html-proofer (~> 3.18)
-  jekyll (~> 3.9)
-  jekyll-assets (~> 3.0)
-  jekyll-feed (~> 0.15)
+  html-proofer (~> 3.19, >= 3.19.1)
+  jekyll (~> 3.9, >= 3.9.1)
+  jekyll-assets (~> 3.0, >= 3.0.12)
+  jekyll-feed (~> 0.15, >= 0.15.1)
   jekyll-paginate-v2 (= 3.0.0)
-  jekyll-redirect-from
-  jekyll-seo-tag
-  jekyll-sitemap
+  jekyll-redirect-from (>= 0.16.0)
+  jekyll-seo-tag (>= 2.7.1)
+  jekyll-sitemap (>= 1.4.0)
   kramdown-parser-gfm (~> 1.1.0)
   sprockets (~> 3.7)
   tzinfo-data
@@ -141,4 +141,4 @@ RUBY VERSION
    ruby 2.6.6p146
 
 BUNDLED WITH
-   1.17.2
+   1.17.3
