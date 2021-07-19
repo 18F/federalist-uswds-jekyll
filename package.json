@@ -6,14 +6,16 @@
     "clean": "bundle exec jekyll clean",
     "reset": "npx rimraf .git",
     "start": "bundle exec jekyll serve",
-    "test": "bundle exec htmlproofer _site; npx a11y '_site/**/*.html'"
+    "start-detached": "bundle exec jekyll serve --detach",
+    "test": "bundle exec htmlproofer _site",
+    "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\""
   },
   "dependencies": {
     "netlify-cms": "^2.10.102",
     "uswds": "~2.11.0"
   },
   "devDependencies": {
-    "a11y": "^0.5.1",
+    "pa11y-ci": "^2.4.0",
     "rimraf": "^3.0.2"
   }
 }
